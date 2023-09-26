@@ -1,0 +1,50 @@
+
+   <!DOCTYPE html>
+   <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <form action="" method=""  id="formm" onsubmit="clearValues()">
+        <h1> Sign Up </h1>
+        
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="user_name" required>
+
+          <label for="firstname">Firstname:</label>
+          <input type="text" id="firstname" name="first_name" required>
+        
+          <label for="lastname">Lastname:</label>
+          <input type="text" id="lastname" name="last_name" required>
+        
+          <label for="email">Email:</label>
+          <input type="email" id="mail" name="user_email" required pattern="^[a-z|0-9|A-Z]*([_][a-z|0-9|A-Z]+)*([.][a-z|0-9|A-Z]+)*([.][a-z|0-9|A-Z]+)*(([_][a-z|0-9|A-Z]+)*)?@[a-z][a-z|0-9|A-Z]*\.([a-z][a-z|0-9|A-Z]*(\.[a-z][a-z|0-9|A-Z]*)?)$">
+
+          <label for="number">Number:</label>
+          <input type="text" id="number" name="user_number" required pattern="[0-9]{10}">  
+    
+       
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">  
+    
+          
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+
+       
+        <button type="submit" onclick="submission()">Sign Up</button>
+        
+       </form>
+        </div>
+      </div>
+      
+
+
+
+      <script src="script.js"></script>
+    </body>
+   </html>
